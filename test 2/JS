@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Afficher une image</title>
+</head>
+<body>
+
+  <h1>Ma première image</h1>
+
+  <!-- Utilisation de la balise img pour afficher une image -->
+  <img src="C:\Users\timde\Documents\Essais site web\images\IMG_1462.jpeg" alt="Description de l'image"
+  width=100% height=100%/>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mes passions</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 40px 0;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 48px;
+    }
+
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+      padding: 50px 0;
+    }
+
+    .feature {
+      margin-bottom: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .feature:hover {
+      transform: translateX(10px);
+    }
+
+    .feature img {
+      max-width: 300px;
+      margin-right: 200px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature-text {
+      flex: 1;
+      opacity: 0;
+      transform: translateX(-50px);
+      transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    }
+
+    .feature:hover .feature-text {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background: #000;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mes passions</h1>
+  </header>
+
+  <div class="container">
+    <div class="feature">
+      <img src="C:\Users\timde\Documents\Essais site web\images\IMG_0316.jpg" alt="Image 1">
+      <div class="feature-text">
+        <h2>L'informatique</h2>
+        <p>Description de la fonctionnalité. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <img src="C:\Users\timde\Documents\Essais site web\images\IMG_1462.jpeg" alt="Image 2">
+      <div class="feature-text">
+        <h2>La nature</h2>
+        <p>Description de cette fonctionnalité. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+
+    <!-- Ajoutez d'autres fonctionnalités ou sections similaires pour faire défiler la page -->
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Titou's Corporation</p>
+  </footer>
+
+</body>
+</html>

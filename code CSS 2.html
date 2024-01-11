@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Animation CSS</title>
+  <style>
+
+    /* Styles du carré */
+    .animated-square {
+      width: 100px;
+      height: 100px;
+      background-color: #db34d5;
+      position: absolute;
+      animation: bouger 2s linear infinite; /* Utilisation de l'animation nommée 'bouger' */
+    }
+
+    /* Définition de l'animation */
+    @keyframes bouger {
+      0% {
+        left: 50%;
+      }
+      
+      25% {
+        left: 50%;
+        bottom: 0;
+      }
+      50% {
+        left: calc(100% - 100px); /* Animation vers la droite */
+        background-color: #3ce7a5; /* Changement de couleur à mi-chemin */
+        bottom: 0;
+      }
+      75% {
+        left: calc(100% - 100px); /* Animation vers la droite */
+      }
+      100% {
+        left: 50%; /* Retour à la position initiale */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="animated-square"></div>
+</body>
+</html>
